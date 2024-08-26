@@ -377,3 +377,5 @@ ORDER BY Salary DESC;
 | Jane      | Smith    | 60000  |
 
 ---
+
+Well will Cover new topics in next Doc
