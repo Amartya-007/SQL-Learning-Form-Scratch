@@ -264,11 +264,11 @@ SELECT * FROM employees;
 ```
 
 <div align="center">
-<h2>Before</h2>
+<h2><b>Before</b></h2>
 
 ![alt text](../Images/image-14.png)
 
-<h2>After</h2>
+<h2><b>After</b></h2>
 
 ![alt text](../Images/image-13.png)
 
