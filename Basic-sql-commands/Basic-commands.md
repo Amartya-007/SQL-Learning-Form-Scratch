@@ -263,15 +263,17 @@ SELECT * FROM employees;
 
 ```
 
-#### Before
+<div align="center">
+<h2>Before</h2>
 
 ![alt text](../Images/image-14.png)
 
-#### After
+<h2>After</h2>
 
 ![alt text](../Images/image-13.png)
 
 _Note: A new record with EmployeeID 6 has been added._
+</div>
 
 ---
 
