@@ -53,7 +53,37 @@ VALUES
 (3, 'Michael', 'Johnson', 'Finance', 75000, '2021-07-22'),
 (4, 'Emily', 'Davis', 'IT', 65000, '2022-11-11'),
 (5, 'James', 'Brown', 'HR', 45000, '2018-05-30');
+
 ```
+
+---
+
+---
+
+## The outputs shoud look like this after executing the commands :
+
+![Images/image.png](../Images/image.png)
+
+![Images/image-1.png](../Images/image-2.png)
+
+**When writing SQL commands, especially for creating tables, it's often helpful to format your code with line breaks and indentation. This makes the code more readable and easier to debug.**
+
+![Images/image-2.png](../Images/image-2.png)
+
+**In this formatted version, each column definition is on a new line. This clarity helps in several ways:**
+
+**Readability:** It's easier to see each column and its type, making the structure of the table clear at a glance.
+Debugging: If there's an error or typo, it's simpler to identify and fix it. Each part of the table definition is separate, so you can quickly locate and address issues.
+
+**Maintenance:** When you need to modify the table structure later, having a well-organized format makes it easier to make changes and understand the existing structure.
+
+Although you can write the entire command on a single line, it can become challenging to spot errors or understand the command, especially in more complex statements. Therefore, we recommend using a formatted approach for better clarity and ease of use.
+
+![alt text](../Images/image-4.png)
+
+---
+
+---
 
 ### **SELECT DISTINCT**
 
@@ -61,7 +91,7 @@ VALUES
 
 The `SELECT DISTINCT` statement ensures that only unique values are returned, eliminating duplicate rows from the results.
 
-#### Example:
+### Example:
 
 To get a list of unique departments:
 
@@ -71,13 +101,7 @@ SELECT DISTINCT Department FROM Employees;
 
 #### Result:
 
-| Department |
-| ---------- |
-| HR         |
-| IT         |
-| Finance    |
-
----
+![Images/image-5.png](../Images/image-5.png)
 
 ### **WHERE Clause**
 
@@ -85,9 +109,9 @@ SELECT DISTINCT Department FROM Employees;
 
 The `WHERE` clause filters records that meet specific criteria. It's used to specify the conditions for selecting rows.
 
-#### Example:
+### Example:
 
-To find employees in the 'IT' department:
+- To find employees in the 'IT' department:
 
 ```sql
 SELECT FirstName, LastName, Salary
@@ -97,44 +121,39 @@ WHERE Department = 'IT';
 
 #### Result:
 
-| FirstName | LastName | Salary |
-| --------- | -------- | ------ |
-| Jane      | Smith    | 60000  |
-| Emily     | Davis    | 65000  |
+![Images/image-6.png](../Images/image-6.png)
 
-#### Operators in `WHERE` Clause
+### Operators in `WHERE` Clause
 
 You can use various operators to filter results:
 
-- `=`: Equal
-- `>`: Greater than
-- `<`: Less than
-- `>=`: Greater than or equal
-- `<=`: Less than or equal
-- `<> or !=`: Not equal (We can choose any of them)
-- `BETWEEN`: Between a certain range
-- `LIKE`: Search for a pattern
-- `IN`: Specify multiple possible values
+- `=` : Equal
+- `>` : Greater than
+- `<` : Less than
+- `>=` : Greater than or equal
+- `<=` : Less than or equal
+- `<> or !=` : Not equal (We can choose any of them)
+- `BETWEEN` : Between a certain range
+- `LIKE` : Search for a pattern
+- `IN` : Specify multiple possible values
 
-#### Example:
+### Example:
 
-To find employees with a salary between 50000 and 70000:
+- To find employees with a salary between 50000 and 70000:
 
 ```sql
+
 SELECT FirstName, LastName, Salary
 FROM Employees
 WHERE Salary BETWEEN 50000 AND 70000;
+
 ```
 
 #### Result:
 
-| FirstName | LastName | Salary |
-| --------- | -------- | ------ |
-| John      | Doe      | 50000  |
-| Jane      | Smith    | 60000  |
-| Emily     | Davis    | 65000  |
+![Images/image-7.png](../Images/image-7.png)
 
-To find employees whose names start with 'J':
+- To find employees whose names start with 'J':
 
 ```sql
 SELECT FirstName, LastName
@@ -146,13 +165,9 @@ WHERE FirstName LIKE 'J%';
 
 #### Result:
 
-| FirstName | LastName |
-| --------- | -------- |
-| John      | Doe      |
-| Jane      | Smith    |
-| James     | Brown    |
+![alt text](../Images/image-8.png)
 
-To find employees in departments 'IT' or 'Finance':
+- To find employees in departments 'IT' or 'Finance':
 
 ```sql
 SELECT FirstName, LastName, Department
@@ -162,11 +177,7 @@ WHERE Department IN ('IT', 'Finance');
 
 #### Result:
 
-| FirstName | LastName | Department |
-| --------- | -------- | ---------- |
-| Jane      | Smith    | IT         |
-| Michael   | Johnson  | Finance    |
-| Emily     | Davis    | IT         |
+![Images/image-9.png](../Images/image-9.png)
 
 ---
 
@@ -176,9 +187,9 @@ WHERE Department IN ('IT', 'Finance');
 
 The `ORDER BY` clause sorts the result set based on one or more columns. You can sort in ascending (ASC) or descending (DESC) order.
 
-#### Example:
+### Example:
 
-To sort employees by salary in descending order:
+- To sort employees by salary in descending order:
 
 ```sql
 SELECT FirstName, LastName, Salary
@@ -188,15 +199,7 @@ ORDER BY Salary DESC;
 
 #### Result:
 
-| FirstName | LastName | Salary |
-| --------- | -------- | ------ |
-| Michael   | Johnson  | 75000  |
-| Emily     | Davis    | 65000  |
-| Jane      | Smith    | 60000  |
-| John      | Doe      | 50000  |
-| James     | Brown    | 45000  |
-
----
+## ![alt text](../Images/image-10.png)
 
 ### **AND, OR, NOT Operators**
 
@@ -208,9 +211,9 @@ These logical operators are used in the `WHERE` clause to combine or negate cond
 - `OR`: Requires at least one condition to be true.
 - `NOT`: Negates a condition.
 
-#### Example:
+### Example:
 
-To find employees in the 'IT' department with a salary greater than 60000:
+- To find employees in the 'IT' department with a salary greater than 60000:
 
 ```sql
 SELECT FirstName, LastName, Department, Salary
@@ -220,11 +223,9 @@ WHERE Department = 'IT' AND Salary > 60000;
 
 #### Result:
 
-| FirstName | LastName | Department | Salary |
-| --------- | -------- | ---------- | ------ |
-| Emily     | Davis    | IT         | 65000  |
+![alt text](../Images/image-11.png)
 
-To find employees who are not in the 'HR' department:
+- To find employees who are not in the 'HR' department:
 
 ```sql
 SELECT FirstName, LastName, Department
@@ -234,11 +235,7 @@ WHERE NOT Department = 'HR';
 
 #### Result:
 
-| FirstName | LastName | Department |
-| --------- | -------- | ---------- |
-| Jane      | Smith    | IT         |
-| Michael   | Johnson  | Finance    |
-| Emily     | Davis    | IT         |
+![alt text](../Images/image-12.png)
 
 ---
 
@@ -248,9 +245,9 @@ WHERE NOT Department = 'HR';
 
 The `INSERT INTO` statement adds new rows to a table. You need to specify the columns and values for the new row.
 
-#### Example:
+### Example:
 
-To add a new employee:
+- To add a new employee:
 
 ```sql
 INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary, JoinDate)
@@ -259,14 +256,20 @@ VALUES (6, 'Robert', 'Wilson', 'Marketing', 55000, '2023-04-18');
 
 #### Updated Table:
 
-| EmployeeID | FirstName | LastName | Department | Salary | JoinDate   |
-| ---------- | --------- | -------- | ---------- | ------ | ---------- |
-| 1          | John      | Doe      | HR         | 50000  | 2020-01-15 |
-| 2          | Jane      | Smith    | IT         | 60000  | 2019-03-10 |
-| 3          | Michael   | Johnson  | Finance    | 75000  | 2021-07-22 |
-| 4          | Emily     | Davis    | IT         | 65000  | 2022-11-11 |
-| 5          | James     | Brown    | HR         | 45000  | 2018-05-30 |
-| 6          | Robert    | Wilson   | Marketing  | 55000  | 2023-04-18 |
+```sql
+-- Write this to view full table
+
+SELECT * FROM employees;
+
+```
+
+#### Before
+
+![alt text](../Images/image-14.png)
+
+#### After
+
+![alt text](../Images/image-13.png)
 
 _Note: A new record with EmployeeID 6 has been added._
 
@@ -278,7 +281,7 @@ _Note: A new record with EmployeeID 6 has been added._
 
 `NULL` indicates the absence of a value. It's not the same as an empty string or zero. Use `IS NULL` or `IS NOT NULL` to check for `NULL` values.
 
-#### Example:
+### Example:
 
 To find employees with a `NULL` salary (none exist in our example):
 
@@ -302,7 +305,7 @@ WHERE Salary IS NULL;
 
 The `UPDATE` statement is used to change existing records. You must specify which rows to update and what new values to set.
 
-#### Example:
+### Example:
 
 To update the salary of 'James Brown':
 
@@ -331,7 +334,7 @@ WHERE FirstName = 'James' AND LastName = 'Brown';
 
 The `DELETE` statement is used to remove rows from a table. Be careful with `DELETE` as it permanently removes data.
 
-#### Example:
+### Example:
 
 To delete the record of 'John Doe':
 
@@ -358,7 +361,7 @@ WHERE FirstName = 'John' AND LastName = 'Doe';
 
 The `SELECT TOP` clause limits the number of rows returned in the result set. This is particularly useful for pagination or when you need a subset of data.
 
-#### Example:
+### Example:
 
 To get the top 3 highest salaries:
 
