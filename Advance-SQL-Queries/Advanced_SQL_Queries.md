@@ -15,7 +15,7 @@ INSERT INTO EMPLOYEES (EmployeeID, FirstName, LastName, Department, Salary, Join
 
 ## 2. Advanced SQL Queries
 
-### LIKE Operator:
+### 2.1 LIKE Operator:
 
 - **Definition**: The `LIKE` operator is a SQL keyword used to search for a specified pattern within a column. It acts as a filtering tool that allows you to find rows where the data matches a specific pattern.
 - **Purpose**: The `LIKE` operator itself is the command that you use to perform the pattern search in SQL.
@@ -27,7 +27,7 @@ INSERT INTO EMPLOYEES (EmployeeID, FirstName, LastName, Department, Salary, Join
 
   ![alt text](image.png)
 
-### Wildcards:
+### 2.2 Wildcards:
 
 - **Definition**: Wildcards are special symbols used in conjunction with the `LIKE` operator to define the pattern you want to search for. The two most common wildcards are:
   - `%`: Represents zero or more characters.
@@ -89,3 +89,5 @@ INSERT INTO EMPLOYEES (EmployeeID, FirstName, LastName, Department, Salary, Join
   ```
 
 - **Output**
+
+  ![alt text](image-4.png)
