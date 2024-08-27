@@ -1,9 +1,18 @@
 # Aggregate Functions in SQL
 
-In this section, we'll cover some basic aggregate functions in SQL using MySQL. We'll use the existing `EMPLOYEES` table for all the examples.
+### This is what we will be covering in this file :-
+
+- **MIN and MAX Functions**
+
+- **COUNT Function**
+
+- **SUM Function**
+
+- **AVG Function**
 
 ## 1. EMPLOYEES Table Structure
 
+We'll use the existing `EMPLOYEES` table for all the examples.
 The `EMPLOYEES` table contains the following columns:
 
 - `EmployeeID`: The unique ID for each employee.
@@ -17,10 +26,10 @@ The `EMPLOYEES` table contains the following columns:
 
 ### 2.1 MIN and MAX Functions
 
-- **MIN Function**: Finds the smallest value in a column.
-- **MAX Function**: Finds the largest value in a column.
+- **`MIN Function`**: Finds the smallest value in a column.
+- **`MAX Function`**: Finds the largest value in a column.
 
-**Example:**
+### Example
 
 ```sql
 -- Finding the minimum salary
@@ -30,7 +39,7 @@ SELECT MIN(Salary) AS MinimumSalary FROM EMPLOYEES;
 SELECT MAX(Salary) AS MaximumSalary FROM EMPLOYEES;
 ```
 
-**Output:**
+### Output:
 
 ![alt text](image.png)
 
@@ -40,14 +49,14 @@ SELECT MAX(Salary) AS MaximumSalary FROM EMPLOYEES;
 
 - **COUNT Function**: Counts the number of rows in a result set.
 
-**Example:**
+### Example
 
 ```sql
 -- Counting the number of employees
 SELECT COUNT(*) AS NumberOfEmployees FROM EMPLOYEES;
 ```
 
-**Output:**
+### Output
 
 ![alt text](image-2.png)
 
@@ -55,14 +64,14 @@ SELECT COUNT(*) AS NumberOfEmployees FROM EMPLOYEES;
 
 - **SUM Function**: Calculates the total sum of a numeric column.
 
-**Example:**
+### Example
 
 ```sql
 -- Calculating the total sum of salaries
 SELECT SUM(Salary) AS TotalSalaries FROM EMPLOYEES;
 ```
 
-**Output:**
+### Output
 
 ![alt text](image-3.png)
 
@@ -70,16 +79,13 @@ SELECT SUM(Salary) AS TotalSalaries FROM EMPLOYEES;
 
 - **AVG Function**: Calculates the average value of a numeric column.
 
-**Example:**
+### Example
 
 ```sql
 -- Calculating the average salary
 SELECT AVG(Salary) AS AverageSalary FROM EMPLOYEES;
 ```
 
-**Output:**
+### Output
 
-```
-
-This `.md` file provides a straightforward explanation of each aggregate function with examples using your existing `EMPLOYEES` table. You can execute the provided SQL queries in MySQL to practice.
-```
+![alt text](image-4.png)
