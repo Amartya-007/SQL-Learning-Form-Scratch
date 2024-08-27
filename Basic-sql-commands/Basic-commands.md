@@ -293,9 +293,7 @@ WHERE Salary IS NULL;
 
 #### Result:
 
-| FirstName          | LastName | Salary |
-| ------------------ | -------- | ------ |
-| _No records found_ |
+![alt text](../Images/image-15.png)
 
 ---
 
@@ -317,16 +315,7 @@ WHERE FirstName = 'James' AND LastName = 'Brown';
 
 #### Updated Table:
 
-| EmployeeID | FirstName | LastName | Department | Salary | JoinDate   |
-| ---------- | --------- | -------- | ---------- | ------ | ---------- |
-| 1          | John      | Doe      | HR         | 50000  | 2020-01-15 |
-| 2          | Jane      | Smith    | IT         | 60000  | 2019-03-10 |
-| 3          | Michael   | Johnson  | Finance    | 75000  | 2021-07-22 |
-| 4          | Emily     | Davis    | IT         | 65000  | 2022-11-11 |
-| 5          | James     | Brown    | HR         | 50000  | 2018-05-30 |
-| 6          | Robert    | Wilson   | Marketing  | 55000  | 2023-04-18 |
-
----
+## ![alt text](../Images/image-16.png)
 
 ### **DELETE Statement**
 
@@ -345,13 +334,7 @@ WHERE FirstName = 'John' AND LastName = 'Doe';
 
 #### Updated Table:
 
-| EmployeeID | FirstName | LastName | Department | Salary | JoinDate   |
-| ---------- | --------- | -------- | ---------- | ------ | ---------- |
-| 2          | Jane      | Smith    | IT         | 60000  | 2019-03-10 |
-| 3          | Michael   | Johnson  | Finance    | 75000  | 2021-07-22 |
-| 4          | Emily     | Davis    | IT         | 65000  | 2022-11-11 |
-| 5          | James     | Brown    | HR         | 50000  | 2018-05-30 |
-| 6          | Robert    | Wilson   | Marketing  | 55000  | 2023-04-18 |
+![alt text](../Images/image-17.png)
 
 ---
 
@@ -366,19 +349,14 @@ The `SELECT TOP` clause limits the number of rows returned in the result set. Th
 To get the top 3 highest salaries:
 
 ```sql
-SELECT TOP 3 FirstName, LastName, Salary
+SELECT FirstName, LastName, Salary
 FROM Employees
-ORDER BY Salary DESC;
+ORDER BY Salary DESC
+LIMIT 3;
 ```
 
 #### Result:
 
-| FirstName | LastName | Salary |
-| --------- | -------- | ------ |
-| Michael   | Johnson  | 75000  |
-| Emily     | Davis    | 65000  |
-| Jane      | Smith    | 60000  |
-
----
+## ![alt text](../Images/image-18.png)
 
 Well will Cover new topics in next Doc
