@@ -51,22 +51,8 @@ INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary, Join
 (12, 'Paul', 'Walker', 'Marketing', 51000.00, '2021-08-24'),
 (13, 'Nina', 'Scott', 'Legal', 72000.00, '2022-12-15'),
 (14, 'Tom', 'Moore', 'Operations', 56000.00, '2023-02-01'),
-(15, 'Olivia', 'Martin', 'Development', 65000.00, '2023-07-10'),
-(16, 'Liam', 'Taylor', 'HR', 53000.00, '2018-06-25'),
-(17, 'Sophia', 'Green', 'Finance', 76000.00, '2019-09-19'),
-(18, 'Jackson', 'Harris', 'IT', 67000.00, '2020-12-05'),
-(19, 'Ava', 'Roberts', 'Sales', 48000.00, '2021-01-10'),
-(20, 'Mason', 'Carter', 'Support', 50000.00, '2022-05-16'),
-(21, 'Isabella', 'Morris', 'Marketing', 54000.00, '2022-11-30'),
-(22, 'Ethan', 'Walker', 'Legal', 73000.00, '2023-03-22'),
-(23, 'Mia', 'Allen', 'Operations', 57000.00, '2023-06-15'),
-(24, 'Jacob', 'Young', 'Development', 66000.00, '2023-01-08'),
-(25, 'Harper', 'King', 'Research', 68000.00, '2023-04-05'),
-(26, 'Benjamin', 'Adams', 'Sales', 49000.00, '2021-05-20'),
-(27, 'Charlotte', 'Baker', 'Support', 51000.00, '2022-07-12'),
-(28, 'Alexander', 'Nelson', 'Legal', 74000.00, '2023-08-18'),
-(29, 'Ella', 'Cruz', 'Development', 67000.00, '2023-10-01'),
-(30, 'William', 'Green', 'Research', 69000.00, '2023-09-15');
+(15, 'Olivia', 'Martin', 'Development', 65000.00, '2023-07-10');
+
 ```
 
 ### 2.2 `DEPARTMENTS` Table
@@ -97,22 +83,7 @@ INSERT INTO DEPARTMENTS (DepartmentID, DepartmentName, Location) VALUES
 (12, 'HR', 'Los Angeles'),
 (13, 'Finance', 'Paris'),
 (14, 'Marketing', 'Dallas'),
-(15, 'Sales', 'San Diego'),
-(16, 'Support', 'San Francisco'),
-(17, 'Legal', 'Philadelphia'),
-(18, 'Operations', 'San Antonio'),
-(19, 'Development', 'San Jose'),
-(20, 'Research', 'Chicago'),
-(21, 'HR', 'Miami'),
-(22, 'Finance', 'New York'),
-(23, 'IT', 'Seattle'),
-(24, 'Marketing', 'Boston'),
-(25, 'Sales', 'Austin'),
-(26, 'Support', 'Phoenix'),
-(27, 'Legal', 'Denver'),
-(28, 'Operations', 'Philadelphia'),
-(29, 'Development', 'Houston'),
-(30, 'Research', 'San Antonio');
+(15, 'Sales', 'San Diego');
 ```
 
 ## 3. Understanding Different Types of Joins
@@ -247,5 +218,3 @@ SELECT DepartmentName AS Name FROM Departments;
 **Result:** This query combines names from both the `Employees` and `Departments` tables, eliminating duplicates. If a name appears in both tables, it will only appear once in the result.
 
 ---
-
-This detailed explanation should help you understand SQL Joins comprehensively and prepare you for interviews. You can copy and paste the SQL commands into your MySQL environment to see how each join works with the provided sample data.
