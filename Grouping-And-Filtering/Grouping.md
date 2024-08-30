@@ -195,9 +195,7 @@ HAVING COUNT(*) > 1;
 
 **Result:**
 
-| Department | NumberOfEmployees |
-| ---------- | ----------------- |
-| IT         | 2                 |
+![alt text](image-9.png)
 
 ## Conclusion
 
