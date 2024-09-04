@@ -724,6 +724,7 @@ GRANT SELECT, INSERT ON EMPLOYEES TO 'user'@'localhost';
 
 **Explanation:** Grants SELECT and INSERT privileges on the `EMPLOYEES` table to a specific user.
 
+
 ### 12.2 Granting and Revoking Privileges
 
 #### Granting Privileges
